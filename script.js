@@ -76,9 +76,12 @@ document.querySelectorAll(".nav__link").forEach((link) => {
 
 const toggleButton = document.querySelector(".toggle-button");
 const navbarsections = document.querySelector(".sections");
+const closebutton = document.querySelector("#closetogglebutton");
 
 toggleButton.addEventListener("click", () => {
 navbarsections.classList.toggle("active");
 })
 
-
+closebutton.addEventListener("click", () => {
+    navbarsections.classList.remove("active");
+})

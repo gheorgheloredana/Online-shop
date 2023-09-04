@@ -65,7 +65,8 @@
     .footertext {
         margin: 0 20px 0 20px;
     }
-   }
+
+}
 
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -102,7 +103,6 @@
         margin: 60px 20px 10px 20px;
     }
 
-
     .Gallery {
         margin: 120px 50px 70px 50px;
         display: flex;
@@ -113,7 +113,6 @@
 
     .photo {
         width: 45%;
-
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -135,7 +134,6 @@
     footer {
         font-size: 12px;
         margin: 0;
-
     }
 
     .small {
@@ -197,36 +195,15 @@
         display: none;
     }
 
-    #hamburgermenu {
-        display: flex;
-        top: 141px;
-    }
-
     #customerservice {
         display: block;
     }
 
-   
+
     #closemenubutton {
         margin-left: 20px;
         background-color: rgb(204, 143, 153);
         border-color: rgb(204, 143, 153);
-    }
-
-    dialog {
-        border-radius: 5px;
-        width: 300px;
-        background-color: rgb(204, 143, 153);
-        border: none;
-    }
-
-    dialog a {
-        text-decoration: none;
-        color: rgb(255, 249, 241);
-    }
-
-    dialog a:hover {
-        text-decoration: underline;
     }
 
     h1 {
@@ -276,6 +253,9 @@
         row-gap: 40px;
         margin: none;
         width: 100%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        margin-top: 30px;
     }
 
     .toggle-button {
@@ -284,11 +264,11 @@
         display: flex;
         cursor: pointer;
     }
-    
+
     .links {
         border-bottom: none;
         border-top: none;
-        margin: 0;  
+        margin: 40px 0 0 0;
     }
 
     .links li {
@@ -298,9 +278,17 @@
         margin-top: 20px;
     }
 
-    .active{
+    #closetogglebutton {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        display: flex;
+        width: 40px
+    }
+
+    .active {
         display: block;
-        }
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -429,11 +417,6 @@
         display: none;
     }
 
-    #hamburgermenu {
-        display: flex;
-        top: 116px;
-    }
-
     #customerservice {
         display: block;
     }
@@ -442,22 +425,6 @@
         margin-left: 20px;
         background-color: rgb(204, 143, 153);
         border-color: rgb(204, 143, 153);
-    }
-
-    dialog {
-        border-radius: 5px;
-        width: 300px;
-        background-color: rgb(204, 143, 153);
-        border: none;
-    }
-
-    dialog a {
-        text-decoration: none;
-        color: rgb(255, 249, 241);
-    }
-
-    dialog a:hover {
-        text-decoration: underline;
     }
 
     h1 {
@@ -517,25 +484,6 @@
     #mainphoto {
         display: none;
     }
-  
-    .toggle-button {
-        top: 115px;
-        right: 23px;
-        display: flex;
-    }
-    
-    .links {
-        border-bottom: none;
-        border-top: none;
-        margin: 0;  
-    }
-
-    .links li {
-        border-bottom: 1px solid rgb(99, 98, 98);
-        width: 100%;
-        margin-left: 20px;
-        margin-top: 20px;
-    }
 
     .sections {
         font-size: 18px;
@@ -547,10 +495,40 @@
         row-gap: 40px;
         margin: none;
         width: 100%;
-        
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        margin-top: 80px;
     }
 
-    .active{
+    .toggle-button {
+        top: 117px;
+        right: 23px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .links {
+        border-bottom: none;
+        border-top: none;
+        margin: 40px 0 0 0;
+    }
+
+    .links li {
+        border-bottom: 1px solid rgb(99, 98, 98);
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    #closetogglebutton {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        display: flex;
+        width: 40px
+    }
+
+    .active {
         display: block;
-        }
+    }
 }
