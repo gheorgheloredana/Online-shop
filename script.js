@@ -85,3 +85,54 @@ navbarsections.classList.toggle("active");
 closebutton.addEventListener("click", () => {
     navbarsections.classList.remove("active");
 })
+
+//functie add to cart
+
+let carts = document.querySelectorAll(".productpage");
+
+let products = [
+    {
+        name: "Brielle Shimmer Dress - Wild Aster",
+        tag: "BrielleShimmerDress",
+        price: "35",
+        inCart: 0
+    },
+
+    {
+        name: "Brielle Dress - Pink Grapefruit",
+        tag: "BrielleDress",
+        price: "25",
+        inCart: 0
+    }
+]
+
+
+for (let i=0; i < carts.length; i++) {
+carts[i].addEventListener("click", () => {
+    cartNumbers();
+})
+}
+
+function onLoadCartNumbers() {
+    let productNumbers =localStorage.getItem("cartNumbers");
+
+    if(productNumbers) {
+        document.querySelector(".icontext span"). textContent = productNumbers;
+    }
+}
+
+function cartNumbers() {
+    let productNumbers = localStorage.getItem("cartNumbers");
+
+    productNumbers = parseInt(productNumbers);
+    if (productNumbers){
+        localStorage.setItem("cartNumbers", productNumbers + 1);
+        document.querySelector(".icontext span").textContent = productNumbers + 1;
+    }
+    else {
+        localStorage.setItem("cartNumbers", 1);
+        document.querySelector(".icontext span").textContent = 1;
+    }
+    
+}
+onLoadCartNumbers();

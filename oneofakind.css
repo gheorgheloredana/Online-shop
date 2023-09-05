@@ -198,10 +198,8 @@ ul {
 }
 
 .nav__link[aria-current="page"] {
-    background-color: rgb(226, 43, 144);
-    padding: 5px 10px 5px 10px;
-    color:  rgb(255, 249, 241);
-    border-radius: 5px;
+    color: rgb(204, 143, 153);
+    text-decoration: underline;
 }
 
 .footerp {
@@ -420,4 +418,9 @@ article {
 #closetogglebutton{
 position: absolute;
 display: none;
+}
+
+.icontext{
+    text-decoration: none;
+    color: rgb(99, 98, 98) ;
 }

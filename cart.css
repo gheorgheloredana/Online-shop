@@ -1,0 +1,31 @@
+#cartcontainer{
+    height: 500px;
+}
+
+#backtoitems{
+    margin:10px 0 0 100px;
+}
+
+#cart-list{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+#cart-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+.product-quantity{
+    margin-right: 15px;
+}
+.remove-button{
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+}

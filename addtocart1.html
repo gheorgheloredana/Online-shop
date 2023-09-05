@@ -40,7 +40,7 @@
                     <p id="icontext">Login/Sign up</p>
                 </div>
                 <div id="iconsright"><img src="icons/shopping-basket-line.svg" alt="cart icon">
-                    <p id="icontext">Cart</p>
+                    <a class="icontext" href="cart.html"><p id="icontext">Cart <span style="color: rgb(226, 43, 144);">0</span></p></a>
                 </div>
             </div>
 
@@ -48,22 +48,25 @@
     </header>
 
     <nav class="links">
-        <a href="#"  class="toggle-button">
+
+        <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
+
         <ul class="sections">
-            <li><a href="oneofakind.html">Home</a></li>
-            <li><a href="Festive dresses.html">Festive</a></li>
-            <li><a href="Casual.dresses.html">Casual</a></li>
-            <li><a href="Winter.html">Winter</a></li>
-            <li><a href="Summer.html">Summer</a></li>
-            <li><a href="Todler.html">Todler</a></li>
-            <li><a href="Newborn.html">Newborn</a></li>
-            <li><a href="New arivals.html">New arrivals</a></li>
-            <li><a href="Best sale.html">Best sale</a></li>
-            <li><a href="Tutu.html">Tutu</a></li>
+            <img id="closetogglebutton" src="icons/error.svg" alt="closebutton">
+            <li><a href="oneofakind.html" class="nav__link">Home</a></li>
+            <li><a href="Festive dresses.html" class="nav__link">Festive</a></li>
+            <li><a href="Casual.dresses.html" class="nav__link">Casual</a></li>
+            <li><a href="Winter.html" class="nav__link">Winter</a></li>
+            <li><a href="Summer.html" class="nav__link">Summer</a></li>
+            <li><a href="Todler.html" class="nav__link">Todler</a></li>
+            <li><a href="Newborn.html" class="nav__link">Newborn</a></li>
+            <li><a href="New arivals.html" class="nav__link">New arrivals</a></li>
+            <li><a href="Best sale.html" class="nav__link">Best sale</a></li>
+            <li><a href="Tutu.html" class="nav__link">Tutu</a></li>
         </ul>
     </nav>
 
@@ -106,8 +109,9 @@
     
             </div><br>
             
-            <div>
-                <button class="productpage">ADD TO CART</button>
+            <div class="cartbuttons">
+                <button class="productpage cart1">ADD TO CART</button>
+                <button class="productpageremove">REMOVE FROM CART</button>
             </div><br>
             <hr>
             
@@ -198,6 +202,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+       
 </body>
 </body>
 
