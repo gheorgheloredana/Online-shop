@@ -56,11 +56,14 @@ const writeemail= document.getElementById("newslettermail")
 
 newsletterbutton.addEventListener("click", (e) => {
     
-    if (writeemail.value == ""){
-    document.getElementById("newslettermail").style.backgroundColor = "rgb(247, 66, 66)",
-    e.preventDefault()
-}
+    if (!writeemail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){ 
+    document.getElementById("newslettermail").style.borderColor = "rgb(247, 66, 66)";
 
+    e.preventDefault()
+    }
+    else {
+        alert("You have subscribed to our newsletter!");
+        }
 });
 
 
@@ -80,6 +83,7 @@ const closebutton = document.querySelector("#closetogglebutton");
 
 toggleButton.addEventListener("click", () => {
 navbarsections.classList.toggle("active");
+
 })
 
 closebutton.addEventListener("click", () => {
@@ -88,30 +92,9 @@ closebutton.addEventListener("click", () => {
 
 //functie add to cart
 
-let carts = document.querySelectorAll(".productpage");
-
-let products = [
-    {
-        name: "Brielle Shimmer Dress - Wild Aster",
-        tag: "BrielleShimmerDress",
-        price: "35",
-        inCart: 0
-    },
-
-    {
-        name: "Brielle Dress - Pink Grapefruit",
-        tag: "BrielleDress",
-        price: "25",
-        inCart: 0
-    }
-]
+let cart = document.querySelectorAll(".productpage");
 
 
-for (let i=0; i < carts.length; i++) {
-carts[i].addEventListener("click", () => {
-    cartNumbers();
-})
-}
 
 function onLoadCartNumbers() {
     let productNumbers =localStorage.getItem("cartNumbers");
@@ -133,6 +116,116 @@ function cartNumbers() {
         localStorage.setItem("cartNumbers", 1);
         document.querySelector(".icontext span").textContent = 1;
     }
-    
+}
+
+let products = [
+    {
+        name: "Brielle Shimmer Dress - Wild Aster",
+        tag: "BrielleShimmerDress",
+        inCart: 0
+    },
+
+    {
+        name: "Brielle Dress - Pink Grapefruit",
+        tag: "BrielleDress",
+        inCart: 0
+    }
+]
+
+for (let i=0; i < cart.length; i++) {
+cart[i].addEventListener("click", () => {
+    cartNumbers();
+})
 }
 onLoadCartNumbers();
+
+
+//functie login form
+
+const email = document.getElementById("loginemail");
+const password = document.getElementById("loginpassword");
+const loginform = document.querySelector(".login");
+const loginerror = document.getElementById("error");
+
+loginform.addEventListener("submit", (e) => {
+    let messages = []
+    
+
+if (email.value === '' || email.value == null ){
+    messages.push("Email is required");
+}
+
+if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    messages.push("Please enter a valid email address!");
+}
+
+if (password.value === '' || password.value == null ){
+    messages.push("Password is required");
+}
+if (password.value.length <= 6 || password.value.length >= 15){
+    messages.push("Password must be at least 6 characters and less than 15 characters!");
+}
+
+if (
+    (password.value.length >= 6 && password.value.length <= 15) && 
+    (email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+){
+    alert("Login successful!");
+}
+
+if(messages.length > 0){
+    e.preventDefault()
+    loginerror.innerText = messages.join(". ");
+}
+})
+
+
+//functie Sign Up form
+
+const username = document.getElementById("username");
+const signupemail = document.getElementById("signupemail");
+const signuppassword = document.getElementById("signuppassword");
+const signupform = document.querySelector(".register");
+const signuperror = document.getElementById("errorsignup");
+const terms = document.querySelector(".checkbox");
+
+signupform.addEventListener("submit", (e) => {
+    let messagessignup = []
+    
+if (username.value === '' || email.value == null ){
+        messagessignup.push("Please enter username!");
+    }
+
+if (signupemail.value === '' || email.value == null ){
+    messagessignup.push("Email is required");
+}
+
+if (!signupemail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    messagessignup.push("Please enter a valid email address!");
+}
+
+if (signuppassword.value === '' || signuppassword.value == null ){
+     messagessignup.push("Password is required");
+}  
+
+if (signuppassword.value.length <= 6 || signuppassword.value.length >= 15){
+     messagessignup.push("Password must be at least 6 characters and less than 15 characters!");
+}
+if(!terms.checked){
+    messagessignup.push("You mush agree to terms and conditions!");
+}
+
+if (
+    (signuppassword.value.length >= 6 && signuppassword.value.length <= 15) &&
+    signupemail.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/) &&
+    terms.checked &&
+    (username.value !== '' && email.value !== null)
+  ) {
+    alert("Registration successful!");
+  }
+
+if(messagessignup.length > 0){
+    e.preventDefault()
+    signuperror.innerText = messagessignup.join(". ");
+}
+})

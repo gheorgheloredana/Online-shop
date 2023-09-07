@@ -1,12 +1,15 @@
-#cartcontainer{
+#cartcontainer {
     height: 500px;
+    
 }
 
-#backtoitems{
-    margin:10px 0 0 100px;
+#backtoitems {
+    margin: 10px 0 0 100px;
+    color: rgb(226, 43, 144);
+     text-decoration: none;
 }
 
-#cart-list{
+#cart-list {
     margin: 0 auto;
     max-width: 800px;
 }
@@ -17,14 +20,17 @@
     padding: 10px 0;
     border-bottom: 1px solid black;
 }
+
 #cart-list ul {
     list-style-type: none;
     padding: 0;
 }
-.product-quantity{
+
+.product-quantity {
     margin-right: 15px;
 }
-.remove-button{
+
+.remove-button {
     color: white;
     background-color: brown;
     border-radius: 10px;

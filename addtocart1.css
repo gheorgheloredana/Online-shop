@@ -2,7 +2,7 @@ h2 {
     font-size: 22px;
 }
 
-.product{
+.product {
     margin: 80px 100px 80px 100px;
     color: rgb(99, 98, 98);
     display: flex;
@@ -11,54 +11,55 @@ h2 {
     justify-content: space-between;
 }
 
-.photoaddtocart{
-   display: flex;
-   max-width: 50%;
-   flex-direction: column;
+.photoaddtocart {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
 }
 
-.article{
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   max-width: 50%;
-   height: auto;
-   margin-left: 20px;
+.article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px;
 }
 
-.footertext{
+.footertext {
     margin: 0 15px 0 15px;
 }
-#sizetitle{
+
+#sizetitle {
     display: flex;
     flex-direction: column;
 }
 
-#sizes{
+#sizes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     max-width: 600px;
 }
 
-#sale{
+#sale {
     text-decoration: line-through;
     font-size: 16px;
 }
 
-#features{
+#features {
     display: flex;
     align-content: start;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     row-gap: 5px;
-    margin-left: 30px; 
+    margin-left: 30px;
 }
 
-.sizebutton{
+.sizebutton {
     color: rgb(99, 98, 98);
     width: 70px;
     height: 50px;
@@ -72,25 +73,25 @@ h2 {
     font-size: 14px;
 }
 
-#measurements{
+#measurements {
     display: flex;
     align-content: start;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     row-gap: 5px;
-    margin-left: 30px;   
-    margin-top:0px;
+    margin-left: 30px;
+    margin-top: 0px;
 }
 
-.cartbuttons{
+.cartbuttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    }
+}
 
-.productpage{
+.productpage {
     width: 250px;
     height: 40px;
     background-color: rgb(226, 43, 144);
@@ -104,7 +105,7 @@ h2 {
     text-align: center;
 }
 
-.productpageremove{
+.productpageremove {
     width: 250px;
     height: 40px;
     background-color: rgb(218, 58, 58);
@@ -119,159 +120,163 @@ h2 {
     margin-left: 20px;
 }
 
-
-.productpage:hover{
+.productpage:hover {
     background-color: rgb(255, 249, 241);
     color: rgb(226, 43, 144);
     border: 1px solid rgb(226, 43, 144);
 }
 
-.productpageremove:hover{
+.productpageremove:hover {
     background-color: rgb(255, 249, 241);
     color: rgb(218, 58, 58);
     border: 1px solid rgb(218, 58, 58);
 }
-#newslettermail{
+
+#newslettermail {
     border: 1px solid #ccc;
 }
 
-.titlefont{
+.titlefont {
     font-size: 16px;
     font-weight: bold;
 }
-#measurements{
+
+#measurements {
     font-size: 16px;
 }
-#features{
+
+#features {
     font-size: 16px;
 }
 
 
 @media only screen and (min-width: 769px) and (max-width: 1279px) {
-    .product{
+    .product {
         display: flex;
         flex-direction: column;
         align-content: center;
         align-self: center;
         justify-content: space-between;
     }
-    
-    .photoaddtocart{
-       display: flex;
-       max-width: 100%;
-       flex-direction: column;
-    }
-    
-    .article{
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       max-width: 100%;
-       height: auto;
-       margin-left: 20px;
+
+    .photoaddtocart {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
     }
 
-    /* .sections {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 18px;
-    } */
-    
+    .article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        margin-left: 20px;
+    }
+
     .links {
-       margin: 0;
+        margin: 0;
         border-bottom: 1px solid rgb(204, 143, 153);
         border-top: 1px solid rgb(204, 143, 153);
     }
 
-    .titlefont{
+    .titlefont {
         font-size: 14px;
     }
 
-    .productpage{
+    .productpage {
         width: 300px;
         height: 40px;
     }
 
-    #measurements{
+    #measurements {
         font-size: 14px;
     }
-    #features{
+
+    #features {
         font-size: 14px;
     }
 }
 
 
-    @media only screen and (min-width: 480px) and (max-width: 768px){
-        .product{
-            flex-direction: column;
-            margin: 15px 15px 80px 15px;
-        }
-        
-        .photoaddtocart{
-           max-width: 100%;
-        }
-        
-        .article{
-           max-width: 100%;
-        }
-        h2 {
-            font-size: 18px;
-        }
-
-        p {
-            font-size: 12px;
-        }
-
-        .productpage{
-            width: 200px;
-            height: 40px;
-        }
-    
-        #measurements{
-            font-size: 12px;
-        }
-        #features{
-            font-size: 12px;
-        }
-        .titlefont{
-            font-size: 14px;
-        }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        margin: 15px 15px 80px 15px;
     }
 
-
-    @media only screen and (max-width: 480px) {
-        .product{
-            flex-direction: column;
-            margin: 15px 15px 80px 15px;
-        }
-        
-        .photoaddtocart{
-           max-width: 100%;
-        }
-        
-        .article{
-           max-width: 100%;
-        }
-        h2 {
-            font-size: 18px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-        .productpage{
-            width: 200px;
-            height: 40px;
-        }
-
-        #measurements{
-            font-size: 12px;
-        }
-        #features{
-            font-size: 12px;
-            
-        }
-        .titlefont{
-            font-size: 14px;
-        }
+    .photoaddtocart {
+        max-width: 100%;
     }
+
+    .article {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .productpage {
+        width: 200px;
+        height: 40px;
+    }
+
+    #measurements {
+        font-size: 12px;
+    }
+
+    #features {
+        font-size: 12px;
+    }
+
+    .titlefont {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .product {
+        flex-direction: column;
+        margin: 15px 15px 80px 15px;
+    }
+
+    .photoaddtocart {
+        max-width: 100%;
+    }
+
+    .article {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .productpage {
+        width: 200px;
+        height: 40px;
+    }
+
+    #measurements {
+        font-size: 12px;
+    }
+
+    #features {
+        font-size: 12px;
+
+    }
+
+    .titlefont {
+        font-size: 14px;
+    }
+}

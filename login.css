@@ -22,6 +22,18 @@
     color: rgb(99, 98, 98);
 }
 
+#error {
+    color: red;
+    font-size: 12px;
+    max-width: 400px;
+}
+
+#errorsignup {
+    color: red;
+    font-size: 12px;
+    max-width: 400px;
+}
+
 h2 {
     font-size: 22px;
 }
@@ -93,32 +105,37 @@ form input[type="submit"]:hover {
 
 #socialmediasignup {
     width: 100px;
+    margin-top: 20px;
 }
 
-#newslettermail{
-    border: 1px solid #ccc;
-}
+.registerwith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
 @media only screen and (min-width: 769px) and (max-width: 1279px) {
     form input[type="text"] {
         width: 300px;
     }
-    
+
     form input[type="password"] {
         width: 300px;
     }
-    
+
     form input[type="email"] {
         width: 300px;
     }
-    
+
     form input[type="submit"] {
         width: 300px;
     }
 
     .form {
-        margin: 65px 15px 65px 15px;  
+        margin: 65px 15px 65px 15px;
     }
+
     .links {
         padding: 0;
         justify-content: space-around;
@@ -130,97 +147,83 @@ form input[type="submit"]:hover {
 
     .form {
         height: 500px;
+        margin: 0x 15px 0 15px;
     }
 
     .registerwith {
         margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-        align-content: baseline;
         width: 300px;
+       
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     .registerwith {
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        align-content: center;
-        flex-direction: column;
-        width: 300px;
+        margin-top: 40px;  
     }
 
     .form {
-        height:820px;
-    }
-    .login{
-        margin-bottom: 40px;
+        height: 820px;
+        margin: 0 15px 0 15px;
     }
 
+    .login {
+        margin-bottom: 20px;
+    }
 
     form input[type="text"] {
-        width: 300px;
-    }
-    
-    form input[type="password"] {
-        width: 300px;
-    }
-    
-    form input[type="email"] {
-        width: 300px;
-    }
-    
-    form input[type="submit"] {
-        width: 300px;
+        width: 250px;
     }
 
-    .form {
-        margin: 0x 15px 0 15px;  
+    form input[type="password"] {
+        width: 250px;
+    }
+
+    form input[type="email"] {
+        width: 250px;
+    }
+
+    form input[type="submit"] {
+        width: 250px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-     .registerwith {
+    .registerwith {
         margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-        align-content: baseline;
+        width: 300px;
+    }
+
+    .form {
+        height: 800px;
+    }
+
+    form input[type="text"] {
         width: 250px;
-}
+    }
 
-.form {
-    height: 800px;
-}
-form input[type="text"] {
-    width:250px;
-}
+    form input[type="password"] {
+        width: 250px;
+    }
 
-form input[type="password"] {
-    width: 250px;
-}
+    form input[type="email"] {
+        width: 250px;
+    }
 
-form input[type="email"] {
-    width: 250px;
-}
+    form input[type="submit"] {
+        width: 250px;
+    }
 
-form input[type="submit"] {
-    width: 250px;
-}
+    .form {
+        margin: 15px 15px 15px 15px;
+    }
 
-.form {
-    margin: 65px 15px 65px 15px; 
-}
+    h2 {
+        font-size: 18px;
+    }
 
-h2 {
-    font-size: 18px;
-}
-.register{
-    margin-top: 40px;
-}
+    .register {
+        margin-top: 40px;
+      
+    }
 }

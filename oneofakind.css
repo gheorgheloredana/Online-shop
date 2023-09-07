@@ -52,7 +52,6 @@ body {
 p {
     font-size: 16px;
     margin: 10px 0px 0px 0px;
-
 }
 
 .Gallery img {
@@ -122,7 +121,6 @@ h1 {
 .nav {
     display: flex;
     align-items: center;
-
 }
 
 input {
@@ -140,7 +138,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 260px;
+    width: 180px;
 }
 
 #logo {
@@ -165,7 +163,7 @@ input {
     align-items: center;
     flex-direction: row;
     align-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .sections {
@@ -312,7 +310,6 @@ article {
     width: 24px;
     height: 24px;
     display: none;
-    
 }
 
 .toggle-button .bar {
@@ -338,6 +335,16 @@ article {
     margin-top: 5px;
 }
 
+@keyframes blink {
+    0% {
+        opacity: 90%;
+    }
+
+    50% {
+        opacity: 60%;
+    }
+}
+
 #newsletterbutton:hover {
     background-color: rgb(255, 249, 241);
     color: rgb(226, 43, 144);
@@ -351,24 +358,6 @@ article {
 #newslettermail {
     width: 200px;
     border-radius: 5px;
-}
-
-#checksign {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 90%;
-    }
-
-    50% {
-        opacity: 60%;
-    }
 }
 
 .class {
@@ -388,8 +377,6 @@ article {
     background-color: rgb(99, 98, 98);
     border: none;
     color: rgb(255, 249, 241);
-    cursor: pointer;
-    transition: all .4s;
 }
 
 .help {
@@ -411,16 +398,18 @@ article {
     justify-content: flex-start;
 }
 
-.show {
-    display: block;
+#closetogglebutton {
+    position: absolute;
+    display: none;
 }
 
-#closetogglebutton{
-position: absolute;
-display: none;
-}
-
-.icontext{
+.icontext {
     text-decoration: none;
-    color: rgb(99, 98, 98) ;
+    color: rgb(99, 98, 98);
+    display: flex;
+}
+
+#icontext {
+    text-decoration: none;
+    color: rgb(99, 98, 98);
 }
