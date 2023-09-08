@@ -66,6 +66,12 @@
         margin: 0 20px 0 20px;
     }
 
+    .sale-stamp {
+        font-size: 30px;
+        width: 110px;
+        height: 110px;
+        border-radius: 70%;
+    }
 }
 
 
