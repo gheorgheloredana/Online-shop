@@ -1,0 +1,28 @@
+.shipping{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 500px;
+   
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .shipping{
+        margin: 100px 150px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .shipping{
+        margin: 100px 70px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .shipping{
+        margin: 50px 50px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,37 @@
+.returns{
+    display: flex;
+    flex-direction: column; 
+    margin: 100px 400px;
+}
+
+#info1{
+    font-size: 14px;
+    font-style: italic;
+}
+
+span{
+    font-weight: 700;
+    text-align: left;
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+    .returns{
+        margin: 100px 150px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .returns{
+        margin: 100px 70px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .returns{
+        margin: 50px 50px;
+        font-size: 14px;
+    }
+}

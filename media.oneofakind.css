@@ -133,7 +133,7 @@
 
     .footer {
         font-size: 14px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     footer {
@@ -168,6 +168,7 @@
         margin: 0;
         align-items: center;
         flex-direction: column;
+        margin-left: 0;
     }
 
     .footertext {
@@ -355,6 +356,7 @@
 
     .footer {
         font-size: 14px;
+      
     }
 
     footer {
@@ -390,6 +392,7 @@
         margin: 0;
         align-items: center;
         flex-direction: column;
+        margin-left: 0;
     }
 
     .footertext {

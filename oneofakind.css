@@ -203,6 +203,17 @@ ul {
 
 .footerp {
     margin: 0;
+    color: rgb(99, 98, 98);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footerp:hover{
+    color: rgb(204, 143, 153);
+    text-decoration: underline;
 }
 
 .footer {
@@ -225,6 +236,7 @@ footer {
 
 .footertext {
     margin: 0 20px 0 20px;
+    text-decoration: none;
 }
 
 small {
@@ -402,7 +414,9 @@ article {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 260px;
+    width: 270px;
+    text-decoration: none;
+    color: rgb(99, 98, 98);
 }
 
 #help {

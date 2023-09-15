@@ -8,14 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="oneofakind.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="addtocart1.css">
     <link rel="stylesheet" href="media.oneofakind.css">
+    <link rel="stylesheet" href="shipping.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" type="image/svg" href="logo/one of a kind logo2 - Copie for browser.svg">
     <title>One of a kind</title>
+    <link rel="icon" type="image/svg" href="logo/one of a kind logo2 - Copie for browser.svg">
 
 
 
@@ -51,7 +52,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -78,57 +78,19 @@
         </ul>
     </nav>
 
-    <section>
-        <div class="form">
-            <div>
 
-                <form class="login">
-
-                    <h2>Login</h2>
-                    <p id="fill">Please enter your e-mail and password:</p>
-
-                    <div id="error"></div>
-
-                    <input id="loginemail" class="inputform" type="text" name="email" placeholder="Email">
-
-                    <input id="loginpassword" class="inputform" type="password" name="password" placeholder="Password">
-
-                    <p id="forgotpass">Forgot Password</p>
-
-                    <input type="submit" value="LOGIN">
-
-                </form>
-            </div>
-
-            <div>
-                <form class="register">
-
-                    <h2>Sign up</h2>
-
-                    <p id="fill">Please fill in the information below:</p>
-
-                    <div id="errorsignup"></div>
-
-                    <input id="username" class="inputform" type="text" name="name" placeholder="Username">
-
-                    <input id="signupemail" class="inputform" type="email" name="email" placeholder="Email">
-
-                    <input id="signuppassword" class="inputform" type="password" name="password" placeholder="Password">
-
-                    <div class="form-group">
-                        <input class="checkbox" type="checkbox" id="terms" name="terms" value="terms">
-                        <label class="terms" for="terms">I agree to the terms and conditions!</label>
-                    </div>
-
-                    <input type="submit" value="CREATE MY ACCOUNT">
-                </form>
-            </div>
-            <div class="registerwith">
-                <h2>or Sign up with:</h2>
-                <img id="socialmediasignup" src="social media.svg" alt="social media icons">
-            </div>
-    </section>
-
+    <div class="shipping">
+       
+        FREE STANDARD SHIPPING for all orders over $39 for US orders.  
+        Most items ship within 4 business days (unless otherwise noted) out of Houston, TX.  Upgraded expedited shipping is available at an additional charge 
+        (Delivery times not guaranteed).  Upgraded expedited shipping has a 1-4 day processing time in addition to the shipping time.   
+        USPS First Class is standard shipping with delivery times from 3-21 days.  We do not split and ship items that are under 
+        the $39 free shipping threshold when ordered with pre-order items.  If you would like for it to ship separately you will have 
+        to contact support@oneofakind.com to pay a shipping fee. If an item is missing from your order or is defective you will need to notify us within 48 hours. 
+        For International orders, please note a separate bill for duties and taxes may apply.
+         One of a kind is not responsible for packages lost, delayed or damaged by delivery services.
+    </div>
+   
 
     <footer>
         <div class="footertext">
@@ -179,9 +141,11 @@
         <small>@ 2023 One of a kind</small>
         <img id="creditcards" src="cards.svg" alt="credit cards icons">
     </div>
+
     <button id="chevron-up">
         <i class="material-icons">arrow_upward</i>
     </button>
+
 
     <script src="script.js"></script>
 
